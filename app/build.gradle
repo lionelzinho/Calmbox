@@ -1,0 +1,19 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.calmbox.app'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.calmbox.app"
+        minSdk 22
+        targetSdk 28
+        versionCode 1
+        versionName "1.0"
+    }
+}
+
+dependencies {
+}

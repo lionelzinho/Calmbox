@@ -3,6 +3,9 @@ name: Crear APK CalmBox
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -25,11 +28,12 @@ jobs:
       - name: Compilar APK
         run: gradle assembleDebug
 
-      - name: Renombrar APK
+      - name: Crear CalmBox.apk
         run: cp app/build/outputs/apk/debug/app-debug.apk CalmBox.apk
 
-      - name: Subir APK
-        uses: actions/upload-artifact@v4
+      - name: Publicar APK
+        uses: softprops/action-gh-release@v2
         with:
-          name: CalmBox-APK
-          path: CalmBox.apk
+          tag_name: calmbox-v1
+          name: CalmBox v1
+          files: CalmBox.apk

@@ -1,0 +1,23 @@
+CALMBOX - COMPILAR SIN ANDROID STUDIO
+
+1. Crea un repositorio vacío en GitHub llamado CalmBox.
+2. Descomprime este ZIP.
+3. En el repositorio pulsa Add file > Upload files.
+4. Sube TODO EL CONTENIDO de la carpeta CalmBox_GitHub.
+   IMPORTANTE: incluye la carpeta .github.
+5. Pulsa Commit changes.
+6. En GitHub abre la pestaña Actions.
+7. Selecciona "Crear APK CalmBox".
+8. Si no empezó solo, pulsa Run workflow > Run workflow.
+9. Espera a que aparezca el visto verde.
+10. Abre la ejecución terminada y baja hasta Artifacts.
+11. Descarga "CalmBox-APK".
+12. Dentro encontrarás CalmBox.apk para pasarlo a la tablet.
+
+En Android 5.1.1 tendrás que permitir la instalación desde fuentes desconocidas.
+
+FUNCION:
+- Abre CalmBox una vez después de instalar.
+- Apaga la pantalla.
+- Al encender la pantalla de nuevo, la guía hablada comienza.
+- Al apagarla, se detiene.
